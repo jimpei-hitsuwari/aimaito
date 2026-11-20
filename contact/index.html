@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja" data-lang="ja" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ｜あいまいと</title>
+<meta name="description" content="心理学研究コミュニティあいまいとへのお問い合わせ。">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>
+  /* Set language before first paint to avoid a flash of the wrong language */
+  (function () {
+    var l = 'ja';
+    try { l = localStorage.getItem('aimaito-lang') || ((navigator.language || '').indexOf('ja') === 0 ? 'ja' : 'en'); } catch (e) {}
+    document.documentElement.dataset.lang = l;
+    document.documentElement.lang = l;
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main"><span lang="ja">本文へ</span><span lang="en">Skip to content</span></a>
+
+<header class="rail">
+  <a class="mark" href="../">あいまいと</a>
+  <nav class="rail-nav" id="site-menu" aria-label="メニュー">
+    <a href="../about/"><span lang="ja">あいまいとについて</span><span lang="en">ABOUT</span></a>
+    <a href="../research/"><span lang="ja">研究</span><span lang="en">RESEARCH</span></a>
+    <a href="../events/"><span lang="ja">イベント</span><span lang="en">EVENTS</span></a>
+    <a href="../join/"><span lang="ja">参加する</span><span lang="en">JOIN</span></a>
+    <a href="../contact/" aria-current="page"><span lang="ja">お問い合わせ</span><span lang="en">CONTACT</span></a>
+  </nav>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-set-lang="ja" aria-pressed="true">JA</button>
+    <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+  </div>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">MENU</button>
+</header>
+
+<div class="stage is-small" aria-hidden="true">
+  <div class="ph is-on" data-key="k2-trio" style="--pos: 50% 50%; --t: 14%; --x: 16%; --b: 18%;">
+    <img class="bg" src="../images/photos/k2-trio-blur.jpg" alt="">
+    <img class="sharp" src="../images/photos/k2-trio.jpg" alt="">
+  </div>
+  <p class="stage-copy" lang="ja">お問い合わせ</p>
+  <p class="stage-copy" lang="en">Contact</p>
+  <p class="stage-cap"><b>あいまい会議 Vol.2</b>2026.04.06</p>
+</div>
+<main id="main">
+  <div class="col">
+
+    <header class="page-head">
+      <span class="en">CONTACT</span>
+      <h1><span lang="ja">お問い合わせ</span><span lang="en">Contact</span></h1>
+      <p lang="ja">あいまいとへの参加，イベント，取材や講演のご依頼など，お気軽にご連絡ください。</p>
+      <p lang="en">Feel free to get in touch about joining, events, interviews or talks.</p>
+    </header>
+
+    <section style="padding-top:48px">
+      <form class="form" id="contact-form" data-endpoint="https://formspree.io/f/mbglevjn" novalidate>
+        <div><label for="f-name"><span lang="ja">お名前</span><span lang="en">Name</span><span class="req">*</span></label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+        <div><label for="f-email"><span lang="ja">メールアドレス</span><span lang="en">Email</span><span class="req">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="f-type"><span lang="ja">ご用件</span><span lang="en">Subject</span><span class="req">*</span></label>
+          <select id="f-type" name="type" required>
+            <option value="参加について / Joining">参加について / Joining</option>
+            <option value="イベントについて / Events">イベントについて / Events</option>
+            <option value="取材・講演のご依頼 / Media and talks">取材・講演のご依頼 / Media and talks</option>
+            <option value="共同研究 / Research collaboration">共同研究 / Research collaboration</option>
+            <option value="その他 / Other">その他 / Other</option>
+          </select>
+        </div>
+        <div><label for="f-message"><span lang="ja">お問い合わせ内容</span><span lang="en">Message</span><span class="req">*</span></label><textarea id="f-message" name="message" required></textarea></div>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="check"><input id="f-agree" type="checkbox" required><label for="f-agree"><span lang="ja"><a href="../privacy-policy/">プライバシーポリシー</a>に同意する</span><span lang="en">I agree to the <a href="../privacy-policy/">privacy policy</a></span></label></div>
+        <div><button class="btn" type="submit" style="margin-top:4px"><span lang="ja">送信する</span><span lang="en">Send</span><i>→</i></button></div>
+      </form>
+      <div class="form-status" id="contact-status" hidden>
+        <p data-msg="mail" hidden><span lang="ja">メールソフトが開きます。内容を確認して送信してください。開かない場合は hitsuwari.jimpei@gmail.com までお送りください。</span><span lang="en">Your email app will open. Please check and send the message. If it does not open, write to hitsuwari.jimpei@gmail.com.</span></p>
+        <p data-msg="sending" hidden><span lang="ja">送信しています…</span><span lang="en">Sending…</span></p>
+        <p data-msg="sent" hidden><span lang="ja">送信しました。ありがとうございました。</span><span lang="en">Sent. Thank you.</span></p>
+        <p data-msg="error" hidden><span lang="ja">送信できませんでした。hitsuwari.jimpei@gmail.com まで直接お送りください。</span><span lang="en">Sending failed. Please write to hitsuwari.jimpei@gmail.com.</span></p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <a href="../privacy-policy/"><span lang="ja">プライバシーポリシー</span><span lang="en">Privacy policy</span></a>
+      <a href="../contact/"><span lang="ja">お問い合わせ</span><span lang="en">Contact</span></a>
+      <a href="https://hitsuwari-jimpei.com/" target="_blank" rel="noopener"><span lang="ja">主宰者のサイト</span><span lang="en">Organizer's website</span></a>
+      <span>© 2024 aimaito</span>
+    </footer>
+  </div>
+</main>
+
+<a class="badge" href="../join/" aria-label="参加する / Join">
+  <svg viewBox="0 0 108 108" aria-hidden="true">
+    <defs><path id="badge-circle" d="M54,54 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+    <text><textPath href="#badge-circle">JOIN AIMAITO · あいまいとに参加する · </textPath></text>
+  </svg>
+  <span lang="ja">参加</span><span lang="en">JOIN</span>
+</a>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/contact.js"></script>
+<!-- Cloudflare Web Analytics: トークンが決まったらここに beacon の script を入れる（全ページ同じ） -->
+</body>
+</html>

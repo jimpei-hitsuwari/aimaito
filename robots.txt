@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jimpei-hitsuwari.github.io/aimaito/sitemap.xml
