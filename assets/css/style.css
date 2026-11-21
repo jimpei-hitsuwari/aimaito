@@ -98,7 +98,7 @@ main { margin-left: var(--rail); margin-right: calc(var(--stage) + var(--gap)); 
 
 .intro { min-height: 100svh; display: flex; flex-direction: column; justify-content: space-between; padding: 30px 0 44px; }
 .intro .top { font-size: 11px; letter-spacing: .16em; color: var(--mute); line-height: 1.9; }
-.intro .logo { font-weight: 400; font-size: clamp(46px, 5.6vw, 84px); letter-spacing: .14em; line-height: 1.2; }
+.intro .logo { font-family: "Zen Maru Gothic", var(--mincho); font-weight: 500; font-size: clamp(46px, 5.6vw, 84px); letter-spacing: .14em; line-height: 1.2; }
 .intro .logo span { color: var(--accent); }
 .intro .sub { margin-top: 14px; font-size: 12px; letter-spacing: .3em; }
 .intro .lead { margin-top: 34px; font-size: 13px; max-width: 30em; }
