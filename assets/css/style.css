@@ -48,9 +48,14 @@ html[data-lang="en"] body [lang="ja"] { display: none !important; }
   display: flex; flex-direction: column; align-items: center; justify-content: space-between;
   padding: 28px 0 24px; border-right: 1px solid var(--line); background: var(--paper);
 }
-.rail .mark { writing-mode: vertical-rl; font-size: 13px; letter-spacing: .4em; font-weight: 500; }
+.rail .mark { writing-mode: vertical-rl; font-size: 13px; letter-spacing: .4em; font-weight: 500; white-space: nowrap; flex-shrink: 0; }
 .rail-nav { display: flex; flex-direction: column; align-items: center; gap: 24px; font-size: 12px; letter-spacing: .3em; }
-.rail-nav a { writing-mode: vertical-rl; opacity: .72; transition: opacity .2s, color .2s; }
+.rail-nav a { writing-mode: vertical-rl; opacity: .72; transition: opacity .2s, color .2s; white-space: nowrap; flex-shrink: 0; }
+@media (min-width: 901px) and (max-height: 760px) {
+  .rail { padding: 18px 0 16px; }
+  .rail-nav { gap: 14px; font-size: 11px; letter-spacing: .2em; }
+  .rail .mark { letter-spacing: .3em; }
+}
 .rail-nav a [lang="en"] { letter-spacing: .18em; }
 .rail-nav a:hover, .rail-nav a.is-on, .rail-nav a[aria-current="page"] { opacity: 1; color: var(--accent); }
 .lang-switch { display: flex; flex-direction: column; gap: 4px; }
